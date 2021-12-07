@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {faTimes} from '@fortawesome/free-solid-svg-icons'
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import {Task} from '../../Task'
 @Component({
   selector: 'app-task-item',
@@ -25,5 +25,7 @@ export class TaskItemComponent implements OnInit {
   onToggle(task: Task){
     this.onToggleReminder.emit(task)
   }
+
+
   
 }
